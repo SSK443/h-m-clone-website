@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Bootstrap Navbar start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand mx-auto" href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg" alt="H&M Logo" height="40">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sustainability</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Customer Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Newsletter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">...</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="./assets/profile.svg" alt="Profile" style="height:25px;"> Sign in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="./assets/wish.svg" alt="Favourites" style="height:25px;">
+              Favourites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="./assets/bag.svg" alt="Shopping Bag" style="height:25px;"> Shopping
+              bag (0)</a>
+          </li>
+          <li class="nav-item">
+            <div class="search-container">
+              <input type="search" class="form-control" placeholder="search">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Bootstrap Navbar end -->
+
+  <!-- Tailwind CSS content -->
+  <div class="category-links container-fluid mt-3">
+    <div class="d-flex justify-content-center">
+      <a class="nav-link" href="#">Ladies</a>
+      <a class="nav-link" href="#">Men</a>
+      <a class="nav-link" href="#">Baby</a>
+      <a class="nav-link" href="#">Kids</a>
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#">Sale</a>
+    </div>
+  </div>
+
+  <div class="info-bar text-center mt-3"
+    style="display: flex; justify-content: space-between; width: 60vw; margin: auto; flex-wrap: wrap;">
+    <span>Free shipping above ₹1999</span>
+    <span>Free & flexible 15 days return</span>
+    <span>Estimated delivery time: 2-7 days</span>
+  </div>
+
+  <div class="firstbox">
+    <div class="first photo box1 text-center">
+      <h3>Celebrate Children's Day with adorable clothes</h3>
+      <p>New styles from ₹699</p>
+      <button style="margin-right: 10px;">Baby</button> <button>Kids</button>
+    </div>
+    <div class="first photo box2 position-relative">
+      <div class="box2-col1">
+        <p>Rs. 1,899.00
+          <br>
+          Flared-skirt twill dress >
+        </p>
+      </div>
+      <div style="color: white;" class="box2-col2">
+        <h4>New arrivals</h4>
+        <h1>The black tie edit</h1>
+        <button>Shop now</button>
+      </div>
+    </div>
+    <div class="first photo box3">
+      <div class="box3-col1">
+        <p>
+          <span>Out of stock</span><br>
+          Rs. 3,999.00
+          <br>
+          Loose Fit Teddy zip-through hoodie..
+        </p>
+      </div>
+      <div class="box3-col2">
+        <h1>Sharp comfort</h1>
+        <p class="r">Statement hoodies, sweatshirts, and puffers with a sporty allure.</p>
+        <button>Shop now</button>
+      </div>
+    </div>
+    <div class="first photo box4">
+      <div class="box4-col1">
+        <h1>Holiday 2024</h1>
+        <button>Shop now</button>
+      </div>
+      <div class="box4-col2">
+        <p>Rs. 1,299.00 <br>
+          Sequined A-line dress>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-2/3 h-10 mx-auto mt-3">
+    <h4 class="text-left font-semibold text-lg">Winter wear picks</h4>
+  </div>
+  <div id="smallGallery" class="flex justify-between items-center mx-auto w-2/3 h-fit mt-3 px-2 pt-1">
+    <div class="gallery gallery1 border-spacing-1 border-red-700">
+      <img src="./assets/asset 0.jpeg" alt="">
+      <p>Oversized fleece..
+        <br>
+        Rs:1990..
+      </p>
+    </div>
+    <div class="gallery gallery2 border-spacing-1 border-red-700">
+      <img src="./assets/asset 1.jpeg" alt="">
+      <p>Pocket-detail..
+        <br>
+        Rs:2999..
+      </p>
+    </div>
+    <div class="gallery gallery3 border-spacing-1 border-red-700">
+      <img src="./assets/asset 2.jpeg" alt="">
+      <p>Holiday 2024
+        <br>
+        Bow-front rib-knit...
+        <br>
+        Rs:2299..
+      </p>
+    </div>
+    <div class="gallery gallery4 border-spacing-1 border-red-700">
+      <img src="./hmgoepprod.jpg" alt="">
+      <p>
+        Teddy Jacket
+        <br>
+        Rs:2,299..
+      </p>
+    </div>
+    <div class="gallery gallery5 border-spacing-1 border-red-700">
+      <img src="./hmgoepprod (1).jpg" alt="">
+      <p>
+        Jeans midfit
+        <br>
+        Rs:3999..
+      </p>
+    </div>
+    <div class="gallery gallery6 border-spacing-1 border-red-700">
+      <img src="./hmgoepprod (2).jpg" alt="">
+      <p>
+        Skin Jeans
+        <br>
+        Rs:1999..
+      </p>
+    </div>
+  </div>
+  <div id="last" class="grid grid-cols-1 justify-items-center items-end p-4 text-center">
+    <div>
+      <h1 class="text-white p-4 text-4xl">Sport luxe edit</h1>
+      <button class="text-black border-none py-2 px-3 ; bg-white font-semibold">Shop now</button>
+    </div>
+  </div>
+  
+<div class="lastone">
+        <div class=" footer flex  justify-between items-start ">
+          <ul >
+           
+            <h4>SHOP</h4>
+            <li>Ladies</li>
+            <li>Men</li>
+            <li>Baby</li>
+            <li>Kids</li>
+            <li>Home</li>
+            <li>Magazine</li>
+          </ul>
+          <ul>
+            
+        
+            <h4>CORPORATE INFO</h4>
+            <li>Career at H&M</li>
+            <li>About H&M group</li>
+            <li>Press</li>
+            <li>Investor relations</li>
+            <li>Corporate governance</li>
+           
+          </ul>
+          <ul>
+           <h4>HELP</h4>
+          <li>Customer Service</li>
+          <li>My H&M</li>
+          <li>Find a store</li>
+          <li>Legal & Privacy</li>
+          <li>Contact</li>
+          <li>Report a scam</li>
+          <li>Cookie Notice</li>
+          <li>Cookie Settings</li></ul>
+          <ul id="four">
+            <p>Sign up now and be the first to know about exclusive offers, latest fashion news & style tips!</p>
+            <button>Readmore -></button>
+          </ul>
+       
+        </div>
+        <div class="log mt-5 pb-5" >
+          <div class="logos">
+            <i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i>
+            <i class="fa-brands fa-tiktok fa-xl" style="color: #000000;"></i>
+            <i class="fa-brands fa-spotify fa-xl" style="color: #000000;"></i>
+            <i class="fa-brands fa-youtube fa-xl" style="color: #080808;"></i>
+            <i class="fa-brands fa-pinterest fa-xl" style="color: #000000;"></i>
+            <i class="fa-brands fa-square-facebook fa-xl" style="color: #000000;"></i>
+
+          </div>
+          <div class="sen mt-5 text-center text-sm "><p class="pt-3">The content of this site is copyright-protected and is the property of H & M Hennes & Mauritz AB.</p>
+           <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg" alt="H&M Logo" class="h-12 container text-center pt-3">
+          <h2 class="text-2xl font-semibold pt-3">INDIA | Rs.</h2>
+          </div>
+        </div>
+        
+</div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
