@@ -427,8 +427,10 @@ top:50%;
 }
 #smallGallery{
   width: 90vw;
+  margin-bottom: 20px;
 }
 #last{
+  margin-top: 25px;
   height: 70vh;
   width: 90vw;
   
@@ -457,5 +459,13 @@ margin: auto;
 }
 .logos{
   width: 100%;
+}
+.title{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+ 
 }
 }
